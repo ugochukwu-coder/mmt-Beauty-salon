@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 63.5%;
+}
+
+:root{
+  --color-primary:#f06c9b;
+  --color-primary-light:#ff6392;
+  --color-secondary:#8f2d56;
+  --colo-white:#ffffff;
+  --gradient-primary: linear-gradient(to top left, #f06c9b, #8f2d56);
+ 
+
+}
+
+body {
+
+  color: #2b283a;
+  font-family: 'Roboto', sans-serif;
+  background-image: var(--gradient-primary);
+  
+}
+
+
+
+
+.mani-pedi {
+  height: 170px;
+}
+
+
+
+h1 {
+  font-size: 5.5rem;
+  padding: 2rem 3rem;
+  background-color: var(--color-secondary);
+  font-family: cursive;
+ 
+  color:#011627;
+  text-align: center;
+  text-shadow: 1px 1px 1px  var(--colo-white);
+}
+
+
+
+h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 3rem;
+  color:  var(--colo-white);
+  font-size: 2rem;
+}
+
+
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+/* Images */
+
+.images {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0;
+  background-color: whitesmoke;
+}
+
+img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+img:hover {
+  border: 3px solid var(--color-secondary);
+}
+
+
+
+.row {
+  margin:3rem 0;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.row:hover {
+  transform: scale(1.2);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+/* Image Captions */
+
+button {
+  width: 20rem;
+  display: inline-block;
+  background-color: var(--color-secondary);
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  border: 1px solid var(--color-secondary);
+
+  
+}
+
+/* Footer */
+
+footer{
+  padding: 1rem 2rem;
+  max-width: 100rem;
+  background-color: #000;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  width: 4rem;
+}
+
+
+span {
+  font-size: 1.4rem;
+}
+
+.image-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.copywrite {
+  font-size: 1.7rem;
+}
+
+
+@media  (max-width: 950px) {
+  .images {
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media  (max-width: 650px) {
+  .images {
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+
+  img{
+    width: 300px;
+  }
+}
+
+
