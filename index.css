@@ -66,6 +66,7 @@ h2 {
 /* Images */
 
 .images {
+  padding: 1rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
  
@@ -78,6 +79,7 @@ h2 {
 img {
   width: 250px;
   border-radius: 10px;
+  transition: 2s;
 }
 
 img:hover {
@@ -163,8 +165,16 @@ span {
     grid-template-columns: 1fr;
   }
 
-  img{
+  img {
+    padding: .5rem;
     width: 300px;
+  }
+
+  footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 }
 
