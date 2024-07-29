@@ -165,10 +165,6 @@ span {
     grid-template-columns: 1fr;
   }
 
-  img {
-    padding: .5rem;
-    width: 300px;
-  }
 
   footer{
     flex-direction: column;
